@@ -8,7 +8,7 @@
 	<jsp:include page="/views/module/header.jsp"></jsp:include>
 </head>
 <body>
-	<form method="POST" action="/joinPro"> 
+	<form method="POST" action="/JoinFormAction"> 
 		<div>
 			<input type="text" id="id" name="id" placeholder="아이디" >
 			<input type="password" id="password" name="password" placeholder="비밀번호" >
