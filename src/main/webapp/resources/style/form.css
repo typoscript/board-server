@@ -1,0 +1,127 @@
+form {
+	width: 500px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+input, select {
+	outline: none;
+}
+
+.choice-container,
+form > div > input,
+form > div > select {
+	padding: 15px;
+	font-size: 15px;
+	border: 0.5px solid gray;
+}
+
+form > div {
+	display: flex;
+	flex-direction: column;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+select:focus {
+	border: 2px solid green;
+}
+
+form > div > input:first-child {
+	border-top-left-radius: 10px;	
+	border-top-right-radius: 10px;	
+}
+
+form > div > input:last-child {
+	border-bottom-left-radius: 10px;	
+	border-bottom-right-radius: 10px;	
+}
+
+form > div:last-child {
+	border-radius: 10px;	
+}
+
+form > input[type="submit"] {
+	background-color: green;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	cursor: pointer;
+	padding: 10px;	
+}
+
+form > div > .choice-container {
+	display: flex;
+	gap: 10px;
+}
+
+form > div > .choice-container > div {
+	display: flex;
+	width: 100%;
+}
+
+form > div > .choice-container > div > input[type="radio"] {
+	display: none;
+}
+
+form > div > .choice-container > div > label {
+	padding: 10px;
+	border: 0.5px solid gray;
+	width: 100%;
+	text-align: center;
+}
+
+form > .agree-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	padding: 5px;
+	border: 0.5px solid gray;
+	border-radius: 10px;
+}
+
+form > .agree-container > label > p > span {
+	color: green;
+}
+
+form > div > #agree:focus {
+	border: 0.5px solid gray;
+}
+
+form > div > #agree {
+	width: 30px;
+	height: 30px;
+	accent-color: green;
+	border-radius: 50%;
+	-webkit-appearance: none;
+}
+
+form > div > #agree:checked:after {
+	left: 50%;
+	transform: translateX(-50%);
+	content: "V";
+	color: green;
+}
+
+form > div > .choice-container > div > #male:checked ~ #label-male,
+form > div > .choice-container > div > #female:checked ~ #label-female,
+form > div > .choice-container > div > #foreigner:checked ~ #label-foreigner,
+form > div > .choice-container > div > #non-foreigner:checked ~ #label-non-foreigner {
+	color: green;
+}	
+
+form > div > .choice-container > div > #male:checked ~ #label-male,
+form > div > .choice-container > div > #female:checked ~ #label-female,
+form > div > .choice-container > div > #foreigner:checked ~ #label-foreigner,
+form > div > .choice-container > div > #non-foreigner:checked ~ #label-non-foreigner {
+	border: 1px solid green;
+}
+
+.error-container > p {
+	display: none;
+	color: tomato;
+}

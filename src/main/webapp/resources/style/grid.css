@@ -1,0 +1,9 @@
+header > h1 {
+	color: green;
+	text-align: center;
+}
+
+footer {
+	padding: 10px 0;
+	text-align: center;
+}
